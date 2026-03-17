@@ -6,17 +6,22 @@
 }
 
 <html>
-    <head>  
-        <title>@ViewBag.Tile</title>
-    </head>
-    <body>
-        <div>
-            <h1>Modificando una vista</h1>
-            <p>
+<head>
+    <title>@ViewBag.Tile</title>
+</head>
+<body>
+    <div>
+        <h1>Modificando una vista</h1>
+        <p>
             <strong>Yo soy:</strong> @autor <br />
-            Mi edad es <input type="number" value="@edad" placeholder="26"/>
-            </p>
-        </div>
-    </body>
+            Mi edad es <input type="number" value="@edad" placeholder="26" />
+        </p>
+    </div>
+        
+    <div>
+        <label>Pertenezco al equipo de PI llamado: </label>
+        <input type="text" placeholder="nombre" />
+    </div>
+</body>
 
 </html>
