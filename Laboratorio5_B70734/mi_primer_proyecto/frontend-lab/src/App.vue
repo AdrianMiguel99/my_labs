@@ -1,16 +1,7 @@
 <template>
-  <CountriesList />
+  <router-view></router-view>
 </template>
 
-<script>
-import CountriesList from './components/CountriesList.vue';
-
-export default {
-  name: 'App',
-  components: {
-    CountriesList,
-  }
-}
-</script>
+<script></script>
 
 <style></style>
