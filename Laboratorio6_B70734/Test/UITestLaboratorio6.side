@@ -1,0 +1,152 @@
+{
+  "id": "50cae391-51e3-40af-9df1-ba5f6fa96ed0",
+  "version": "2.0",
+  "name": "PruebaUIUno",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "fdf9c050-811a-4aa8-ac96-f45abe24cd7e",
+    "name": "PruebaUIUno",
+    "commands": [{
+      "id": "dad952a9-1f0d-4070-a394-7e564ac38e9f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcbf14ff-5d1a-4a69-8cca-24a7a1fbd709",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4de9fd47-9629-4ca6-8b77-ae148a4de977",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//div[@id='app']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Lista de paises')]", "xpath:innerText"]
+      ],
+      "value": "Lista de paises"
+    }, {
+      "id": "171afd59-c586-4558-8479-a8ef8154395e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline",
+      "targets": [
+        ["css=.btn-outline", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar Pais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d73db09-3d45-436f-87e4-df4c36569da4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline",
+      "targets": [
+        ["css=.btn-outline", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar Pais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7d632f6-1253-4114-a37a-94d77c7e24b3",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e0b6a09-c262-4e44-9601-77c28d3e5fa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0720ea0c-c5f0-4ef5-b272-3ead318bbaf4",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nicaragua"
+    }, {
+      "id": "ea7f214d-bbbf-4201-a15c-8c0983d85205",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nicaragua"
+    }, {
+      "id": "3f4dfd0c-26cd-481e-90a5-f7832b458345",
+      "comment": "",
+      "command": "click",
+      "target": "id=continente",
+      "targets": [
+        ["id=continente", "id"],
+        ["css=#continente", "css:finder"],
+        ["xpath=//select[@id='continente']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20e4e261-a4cc-42f6-81a8-f26a4e54739c",
+      "comment": "",
+      "command": "select",
+      "target": "id=continente",
+      "targets": [],
+      "value": "label=America"
+    }, {
+      "id": "491155aa-3b2d-4732-b427-b3d998ab25ad",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=continente",
+      "targets": [],
+      "value": "America"
+    }]
+  }],
+  "suites": [{
+    "id": "f48161b6-3f72-43a6-a43c-a552e4411f16",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fdf9c050-811a-4aa8-ac96-f45abe24cd7e"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
